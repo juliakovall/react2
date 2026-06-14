@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+.card-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
