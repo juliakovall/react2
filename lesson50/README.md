@@ -1,32 +1,120 @@
-# React + TypeScript + Vite
+# Product Search Memoization App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Description
 
-Currently, two official plugins are available:
+This project demonstrates how memoization works in React using **useMemo**, **useCallback**, and **React.memo**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application allows users to search, filter, sort, and select products while optimizing component rendering and avoiding unnecessary calculations.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## GitHub Repository
 
-## Expanding the Oxlint configuration
+Repository:
+https://github.com/juliakovall/react2/tree/main/lesson50
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Features
+
+- Search products by name
+- Filter products by category
+- Sort products by price or rating
+- Display selected product
+- Display product statistics
+- Counter for demonstrating unnecessary re-renders
+- Memoization with `useMemo`
+- Memoized callback functions with `useCallback`
+- Optimized component rendering with `React.memo`
+
+---
+
+## Technologies
+
+- React
+- TypeScript
+- Vite
+- CSS
+
+---
+
+## Memoization
+
+### useMemo
+
+Used for:
+
+- filtering products;
+- sorting products;
+- calculating the total price;
+- calculating the average rating.
+
+### useCallback
+
+Used for:
+
+- selecting a product;
+- resetting filters.
+
+### React.memo
+
+`ProductCard` is wrapped with `React.memo`, so product cards only re-render when their props change.
+
+---
+
+## How to Run
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open in your browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+## Project Structure
+
+```
+src
+│
+├── components
+│   ├── ProductCard.tsx
+│   ├── ProductList.tsx
+│   └── Statistics.tsx
+│
+├── data
+│   └── products.ts
+│
+├── types
+│   └── product.ts
+│
+├── App.tsx
+├── App.css
+└── main.tsx
+```
+
+---
+
+## Author
+
+Julia Koval
