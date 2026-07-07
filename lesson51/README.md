@@ -1,32 +1,135 @@
-# React + TypeScript + Vite
+# Task Focus App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Description
 
-Currently, two official plugins are available:
+Task Focus App is a React application built with Vite and TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application allows users to manage a simple task list while demonstrating the use of several popular React libraries:
 
-## React Compiler
+- React Icons
+- React Toastify
+- React Idle Timer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can add new tasks, mark them as completed, delete tasks, receive notifications, and get notified when they are inactive.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Features
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Task statistics
+- Success, information, warning, and error notifications
+- User inactivity detection
+- Responsive interface
+
+---
+
+## Technologies
+
+- React
+- TypeScript
+- Vite
+- CSS
+- React Icons
+- React Toastify
+- React Idle Timer
+
+---
+
+## Libraries Used
+
+### React Icons
+
+Used for displaying icons in buttons and interface elements.
+
+### React Toastify
+
+Used to display notifications when:
+
+- a task is added;
+- a task is completed;
+- a task is deleted;
+- the user returns after being idle.
+
+### React Idle Timer
+
+Tracks user inactivity.
+
+If the user is inactive for 10 seconds, a warning notification is displayed.
+When the user becomes active again, an informational notification appears.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/juliakovall/react2.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Go to the project folder:
+
+```bash
+cd react2/lesson51
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Build
+
+```bash
+npm run build
+```
+
+---
+
+## Project Structure
+
+```
+src
+│
+├── components
+│   ├── AddTaskForm.tsx
+│   ├── IdleTimer.tsx
+│   ├── TaskItem.tsx
+│   └── TaskList.tsx
+│
+├── types
+│   └── task.ts
+│
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
+```
+
+---
+
+## GitHub Repository
+
+## https://github.com/juliakovall/react2/tree/main/lesson51
+
+## Author
+
+Julia Koval
