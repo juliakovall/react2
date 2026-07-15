@@ -1,0 +1,13 @@
+{
+  "name": "lesson55",
+  "version": "1.0.0",
+  "description": "Asynchronous file operations in Node.js",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "Julia Koval",
+  "license": "ISC"
+}
