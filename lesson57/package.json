@@ -1,0 +1,12 @@
+{
+  "name": "lesson57",
+  "version": "1.0.0",
+  "description": "HTTP server with pure Node.js",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Julia Koval",
+  "license": "ISC"
+}
