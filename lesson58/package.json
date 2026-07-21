@@ -1,0 +1,12 @@
+{
+  "name": "lesson58",
+  "version": "1.0.0",
+  "description": "Secure cryptographic functions in JavaScript",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Julia Koval",
+  "license": "ISC"
+}
