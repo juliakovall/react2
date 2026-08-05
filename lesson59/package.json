@@ -1,0 +1,12 @@
+{
+  "name": "lesson59",
+  "version": "1.0.0",
+  "description": "Asynchronous Gzip compression and decompression",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Julia Koval",
+  "license": "ISC"
+}

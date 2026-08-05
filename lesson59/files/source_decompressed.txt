@@ -1,0 +1,2 @@
+Hello from lesson 59.
+This file will be compressed with Gzip.
