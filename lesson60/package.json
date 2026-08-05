@@ -1,0 +1,15 @@
+{
+  "name": "lesson60",
+  "version": "1.0.0",
+  "description": "RESTful API with Express",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "author": "Julia Koval",
+  "license": "ISC"
+}
