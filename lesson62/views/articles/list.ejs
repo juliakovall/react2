@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h1>Articles</h1>
+
+    <div class="cards">
+      <% articles.forEach((article) => { %>
+        <article class="card">
+          <h2><%= article.title %></h2>
+          <p><%= article.content %></p>
+
+          <a class="button" href="/articles/<%= article.id %>">
+            View article
+          </a>
+        </article>
+      <% }) %>
+    </div>
+  </main>
+</body>
+</html>
