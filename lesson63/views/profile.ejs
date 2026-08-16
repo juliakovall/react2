@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body class="<%= theme %>">
+    <main class="container">
+      <section class="card">
+        <h1>Profile</h1>
+
+        <p>Welcome, <strong><%= username %></strong></p>
+
+        <form action="/auth/logout" method="POST">
+          <button type="submit">Logout</button>
+        </form>
+
+        <a href="/">Back to home</a>
+      </section>
+    </main>
+  </body>
+</html>
