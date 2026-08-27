@@ -1,0 +1,17 @@
+{
+  "name": "lesson67",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.x.x",
+    "express": "^5.x.x",
+    "express-session": "^1.x.x",
+    "mongoose": "^8.x.x",
+    "passport": "^0.7.x",
+    "passport-local": "^1.0.x"
+  }
+}
