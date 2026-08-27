@@ -1,0 +1,42 @@
+services:
+  app:
+    build: .
+    container_name: lesson68-app
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      PORT: 3000
+      MONGODB_URI: mongodb://mongo:27017/lesson68
+      SESSION_SECRET: lesson68-secret
+
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+    command: npm run dev
+
+  mongo:
+    image: mongo:latest
+    container_name: lesson68-mongo
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - mongo-data:/data/db
+
+    healthcheck:
+      test:
+        ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mongo-data:
